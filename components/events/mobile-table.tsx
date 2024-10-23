@@ -168,7 +168,7 @@ const MobileTable = ({
             disabled={!table.getCanPreviousPage()}
             className="bg-[#E2E8F0] p-4 rounded dark:bg-[#484554] dark:border-none"
           >
-            <ArrowLeft />
+            <ArrowLeft color={theme === "dark" ? "white" : null} />
           </button>
           <div className="flex items-center gap-6">
             {Array.from({ length: table.getPageCount() }).map((_, index) => (
@@ -190,7 +190,7 @@ const MobileTable = ({
             disabled={!table.getCanNextPage()}
             className="border p-4 rounded dark:bg-[#484554] dark:border-none"
           >
-            <ArrowRight />
+            <ArrowRight color={theme === "dark" ? "white" : null} />
           </button>
         </div>
         <div className="flex gap-2 items-center relative">

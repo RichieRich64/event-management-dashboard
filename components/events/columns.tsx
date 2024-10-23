@@ -35,7 +35,7 @@ export const columns: ColumnDef<EventDetailsType>[] = [
       const status = row.getValue("status");
 
       return (
-        <div className="font-medium">
+        <div className="text-xs md:text-sm font-medium">
           {status === "inProgress" ? (
             <span className="bg-blue-300 text-blue-600 rounded-md p-4 py-2">
               ● In progress

@@ -19,8 +19,8 @@ const MobileNavLink = ({ href, iconNode, label }: SidebarLinkProps) => {
   return (
     <Link href={href}>
       <div
-        className={`cursor-pointer flex items-center text-sm relative
-          hover:text-[#8576FF] hover:bg-[#FCF7FF] dark:hover:bg-transparent gap-4 transition-colors p-4 px-6 ${
+        className={`cursor-pointer flex flex-1 items-center text-sm relative
+          hover:text-[#8576FF] hover:bg-[#FCF7FF] dark:hover:bg-transparent gap-4 transition-colors p-4 ${
             isActive
               ? "bg-[#FCF7FF] dark:bg-transparent text-[#8576FF] border-t-4 border-[#8576FF]"
               : ""
@@ -39,7 +39,7 @@ const MobileNavLink = ({ href, iconNode, label }: SidebarLinkProps) => {
 const MobileNav = () => {
   return (
     <div className="md:hidden">
-      <div className="flex items-center justify-between border-t-2">
+      <div className="flex items-center justify-betweenn border-t-2">
         <MobileNavLink href="/" iconNode={<Home />} label="Home" />
         <MobileNavLink href="#" iconNode={<Events />} label="Events" />
         <MobileNavLink href="#" iconNode={<Speakers />} label="Speakers" />
